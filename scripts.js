@@ -1,8 +1,12 @@
 // functions
 
 function openMenu(){
-    document.getElementsByClassName("closedNavbar")[0].style.display = "none";
-    document.getElementsByClassName("openNavbar")[0].style.display = "none";
+    const navBar = document.getElementById("nav");
+    if(navBar.style.display == "flex"){
+        navBar.style.display = "none";
+    }else{
+        navBar.style.display = "flex";
+    }
 }
 function navigateToHome(){
     location.assign("./index.html"); 
@@ -20,7 +24,12 @@ header.innerHTML =
         </div>
         <img src="./Assets/menu.svg" alt="menu">
     </div>
-    <div class="navBar">
-    </div>
+    <nav id="nav">
+        <div>
+            <a href="./sobre.html">Estático</a>
+            <a href="./sobre.html">Dinâmico</a>
+        </div>
+        <a href="./sobre.html">Sobre</a>
+    </nav>
 </header>
 `;
