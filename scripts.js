@@ -26,8 +26,8 @@ header.innerHTML =
     </div>
     <nav id="nav">
         <div>
-            <a href="./sobre.html">Estático</a>
-            <a href="./sobre.html">Dinâmico</a>
+            <a href="">Estático</a>
+            <a href="">Dinâmico</a>
         </div>
         <a href="./sobre.html">Sobre</a>
     </nav>

@@ -6,7 +6,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -27,9 +27,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-}
-ol, ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;
@@ -167,9 +164,55 @@ body{
     cursor: pointer;
 }
 
+/* categorias */
+
+.categoriesPageContainer{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+.categoriesPageContainer h1{
+    font-family: "inter";
+    font-size: 2.5vw;
+    width: 16vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: #D1D4C9;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.categoriesContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 34vw;
+    height: 18vw;
+}
+.categoriesContainer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categoriesContainer img{
+    background-color: #D1D4C9;
+    border-radius: 10px;
+    height: 15vw;
+    width: 15vw;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
 /* sobre */
 
 .aboutContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 90vh;
     width: 100vw;
 }
@@ -210,7 +253,15 @@ footer h2{
     text-overflow: ellipsis;
     background-color: #d1d4c900;
 }
-
+.textContainer{
+    height: 70vh;
+    width: 90vw;
+    margin: 5vh 0 5vh 0;
+}
+.textContainer h1,p,li{
+    color: #D1D4C9;
+    padding: 1vh 0 1vh 0;
+}
 /* responsividade */
 
 @media only screen and (max-width: 800px) {
@@ -228,6 +279,20 @@ footer h2{
     }
     .connectionsContainer{
         width: 50vw;
+    } 
+    .categoriesContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        height: 50vw;
+    }
+    .categoriesContainer h1{
+        font-size: 4vw;
+        width: 25vw;
+    }
+    .categoriesContainer img{
+        height: 35vw;
+        width: 35vw;
     }
 }
 @media only screen and (max-width: 1000px) {
