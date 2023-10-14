@@ -173,6 +173,20 @@ body{
     font-size: 4vh;
     cursor: pointer;
 }
+.homepageContainer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    width: 42vh;
+    height: 10vh;
+    background-color: #29435C;
+    color: #D1D4C9;
+    font-size: 4vh;
+    cursor: pointer;
+}
 
 /* categorias */
 
