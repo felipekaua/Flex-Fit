@@ -239,6 +239,9 @@ footer{
 .connectionsContainer a{
     background-color: #D1D4C9;
 }
+a{
+    color: #D1D4C9;
+}
 .connectionsContainer img{
     background-color: #D1D4C9;
     height: 4vh;
@@ -262,6 +265,48 @@ footer h2{
     color: #D1D4C9;
     padding: 1vh 0 1vh 0;
 }
+
+/* paginas */
+
+.infoContainer{
+    height: 80vh;
+    width: 90vw;
+    overflow-y: scroll;
+}
+
+.infoContainer h1{
+    color: #D1D4C9;
+    padding-top: 3vh;
+}
+
+.infoContainer h1::before{
+    content:"•";
+}
+
+.infoContainer h2{
+    color: #D1D4C9;
+    padding: 2vh 0 2vh 0;
+}
+
+.infoContainer h3{
+    color: #D1D4C9;
+}
+
+.infoContainer p{
+    font-family: "arial";
+    font-style: italic;
+    padding-bottom: 3vh;
+}
+
+
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
 /* responsividade */
 
 @media only screen and (max-width: 800px) {
