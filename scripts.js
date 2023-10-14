@@ -4,8 +4,10 @@ function openMenu(){
     const navBar = document.getElementById("nav");
     if(navBar.style.display == "flex"){
         navBar.style.display = "none";
+        document.getElementsByClassName("closeNavBar")[0].style.display = "none"
     }else{
         navBar.style.display = "flex";
+        document.getElementsByClassName("closeNavBar")[0].style.display = "block"
     }
 }
 function navigateToHome(){
@@ -31,5 +33,6 @@ header.innerHTML =
         </div>
         <a href="./sobre.html">Sobre</a>
     </nav>
+    <div onclick="openMenu()" class="closeNavBar"></div>
 </header>
 `;
