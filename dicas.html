@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex&Fit</title>
+    <link rel="icon" href="./Assets/logo.svg">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
+
+    <!-- scripts -->
+    <script defer src="./scripts.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="dicasContainer">
+        <ul class="list" id="list"></ul>
+        <div class="formContainer">
+            <form id="form1" onsubmit="handleSubmit()">
+                <label for="tip">Insira uma dica:</label><br>
+                <input type="text" id="tip" name="tip"><br>
+                <div class="inputContainer">
+                    <label for="name">Nome:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br> 
+                </div>
+                <div class="inputContainer">
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id="cidade" name="cidade"><br>
+                    <label for="estado">Estado:</label><br>
+                    <input type="text" id="estado" name="estado"><br>
+                </div>
+            </form> 
+            <div>
+                <button type="submit" form="form1" value="Submit">Enviar</button>
+                <button onclick="handleClear()">Limpar Campos</button> 
+                <button onclick="handleClearAll()">Limpar todas as dicas</button>
+            </div>
+            <form onsubmit="return false" id="form2" class="filter">
+                <label for="filter">Filtre por termo:</label>
+                <input type="text" id="filter" name="filter">
+            </form>
+            <button type="submit" form="form2" value="Submit" onclick="filtre()">Filtrar</button>
+        </div>
+    </div>
+</body>
+</html>
